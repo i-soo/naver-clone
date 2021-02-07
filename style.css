@@ -1,0 +1,197 @@
+:root {
+  /*Color*/
+  --green-color: #18ce5f;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --grey-color: #8b8f93;
+  --blue-dark-color: #3e63bf;
+  --blue-light-color: #53a2f9;
+  --violet-color: #875af1;
+  --banner-color: #3c3f48;
+
+  /* Font Size */
+  --font-large: 24px;
+  --font-medium: 18px;
+  --font-small: 14px;
+  --font-micro: 12px;
+
+  /* Padding */
+  --padding: 12px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+  padding: 0 var(--padding);
+  background-color: var(--banner-color);
+  color: var(--white-color);
+}
+
+.banner .browser_logo {
+  margin-right: 46px;
+}
+
+.banner .browser_logo .first_word {
+  text-transform: uppercase;
+  font-style: normal;
+  font: bold;
+  font-size: var(--font-micro);
+  color: var(--green-color);
+}
+
+.banner .browser_logo .last_word {
+  font-style: normal;
+  font: bold;
+  font-size: var(--font-medium);
+}
+
+.banner img {
+  align-self: stretch; /**/
+  width: 342px;
+  border-radius: 6px 6px 0 0;
+  margin-top: 6px;
+  margin-right: 18px;
+}
+
+.banner .info {
+  font-size: var(--font-medium);
+}
+
+.banner .downloadBtn {
+  font-size: var(--font-small);
+  padding: 8px;
+  border-radius: 25px;
+  background-color: var(--violet-color);
+  border-color: var(--violet-color);
+  color: var(--white-color);
+  margin: var(--padding) var(--padding);
+}
+
+.banner .hideBtn {
+  background-color: var(--banner-color);
+  color: var(--grey-color);
+  margin-left: var(--padding);
+  border: none;
+}
+
+.banner .hideBtn .fa-times {
+  margin-left: 8px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+header .move_to {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .logoAndSearch {
+  display: flex;
+  padding-left: 57px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav .group {
+  display: flex;
+  flex-direction: row;
+}
+
+header nav .group ul {
+  display: flex;
+}
+
+header nav .group ul li {
+  margin-right: 18px;
+}
+
+header nav .group .moreBtn {
+  margin: 0 18px;
+  border: none;
+}
+
+header nav .hotTopicBtn {
+  margin-left: 36px;
+  border: none;
+}
+
+.mainAndSidebar {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  margin-right: 24px;
+}
+
+.mainAndSidebar main .news_bar {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding) 0;
+}
+
+.mainAndSidebar main .news_stand {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainAndSidebar main .news_stand .bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainAndSidebar main .news .news_stand .bar .title button {
+  border: none;
+}
+
+main .theme_cast {
+  padding: calc(var(--padding) * 2) 0;
+}
+
+main .theme_cast .head .subtitle {
+  padding-right: 324px;
+}
+
+main .theme_cast .bar .theme_bar {
+  display: flex;
+  justify-content: flex-start;
+}
+
+main .theme_cast .bar .theme_bar li {
+  width: 100%;
+}
+
+main .theme_cast .bar .theme_bar button {
+  width: 100%;
+}
+
+main .theme_cast .more_contents {
+  display: flex;
+  justify-content: center;
+}
+
+main .theme_cast .more_contents .viewMoreBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+}
