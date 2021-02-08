@@ -4,6 +4,7 @@
   --white-color: #ffffff;
   --black-color: #000000;
   --grey-color: #8b8f93;
+  --grey-light-color: #f7f9fa;
   --blue-dark-color: #3e63bf;
   --blue-light-color: #53a2f9;
   --violet-color: #875af1;
@@ -27,6 +28,10 @@
 
 ul {
   list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .banner {
@@ -140,6 +145,7 @@ header nav .hotTopicBtn {
 }
 
 main {
+  flex: 3;
   margin-right: 24px;
 }
 
@@ -194,4 +200,204 @@ main .theme_cast .more_contents .viewMoreBtn {
   flex-direction: column;
   align-items: center;
   border: none;
+}
+
+.mainAndSidebar .sidebar {
+  flex: 1;
+}
+
+.sidebar .login {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  padding: var(--padding);
+}
+
+.sidebar .login span {
+  color: var(--grey-color);
+  font-size: var(--font-micro);
+}
+
+.sidebar .login .loginBtn {
+  width: 100%;
+  text-align: center;
+  line-height: 46px; /**/
+  border-radius: 4px;
+  margin: 8px 0;
+  background-color: var(--green-color);
+  color: var(--white-color);
+}
+
+.sidebar .login .findAndCreate {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-micro);
+}
+
+.sidebar .login .findAndCreate .find .fa-lock,
+.create .fa-user {
+  color: var(--grey-color);
+}
+
+.sidebar .login .findAndCreate a {
+  color: var(--black-color);
+}
+
+.sidebar .weather_cast {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0;
+  padding: var(--padding);
+  border-style: solid;
+}
+
+.sidebar .weather_cast .weather {
+  padding-right: 62px;
+}
+
+.sidebar .weather_cast .weather .fa-sun {
+  color: orange;
+  font-size: var(--font-large);
+}
+
+.sidebar .weather_cast .weather .average {
+  font-size: var(--font-medium);
+}
+
+.sidebar .weather_cast .weather .state {
+  font-size: var(--font-small);
+}
+
+.sidebar .weather_cast .weather .lowest {
+  font-size: var(--font-small);
+  color: var(--blue-light-color);
+}
+
+.sidebar .weather_cast .weather .highest {
+  font-size: var(--font-small);
+  color: red;
+}
+
+.sidebar .weather_cast .weather .location {
+  font-size: var(--font-small);
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+.sidebar .weather_cast .leftBtn,
+.rightBtn {
+  height: 100%;
+}
+
+.sidebar .weather_cast .leftBtn {
+  margin-left: var(--padding);
+}
+
+.sidebar .shop .shop_header {
+  display: flex;
+  justify-content: space-between;
+  font: bold var(--font-small);
+}
+
+.sidebar .shop .shop_header a {
+  color: var(--black-color);
+}
+
+.sidebar .shop .shop_header .fa-shopping-bag {
+  margin-right: 4px;
+  color: var(--green-color);
+}
+
+.sidebar .shop .fa-angle-right {
+  margin-left: 6px;
+  color: var(--grey-color);
+}
+
+.sidebar .shop .shop_header .category {
+  display: flex;
+}
+
+.sidebar .shop .shop_header .category button {
+  margin-right: 16px;
+  border-style: none;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  font: bold var(--font-small);
+}
+
+.sidebar .shop .shop_mall {
+  border-style: solid;
+  background-color: var(--grey-light-color);
+  padding: var(--padding);
+  margin-top: 8px;
+}
+
+.sidebar .shop .shop_mall ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sidebar .shop .shop_mall a {
+  font-size: var(--font-micro);
+  color: var(--black-color);
+}
+
+.sidebar .shop .shop_goods {
+}
+
+.sidebar .shop .shop_goods .page_control {
+  display: flex;
+  justify-content: flex-end;
+  margin: var(--padding);
+}
+
+.sidebar .shop .shop_goods button {
+  width: 29px;
+  height: 29px;
+  background-color: var(--white-color);
+  color: var(--grey-color);
+  border: 1px solid var(--grey-light-color);
+}
+
+.sidebar .shop .shop_goods .page_control .leftBtn {
+  margin-left: 6px;
+}
+
+.sidebar .shop .shop_goods li {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sidebar .shop .shop_goods li a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--black-color);
+}
+
+.sidebar .shop .shop_goods ul img {
+  width: 114px;
+}
+
+.sidebar .shop .shop_goods ul li a .title {
+  font-size: var(--font-micro);
+}
+
+.sidebar .shop .shop_goods ul li a .title:first-child {
+  font-weight: bold;
+}
+
+.sidebar .shop .shop_goods .page_control_bottom {
+  display: flex;
+  justify-content: center;
+  margin: var(--padding);
+}
+
+.sidebar .shop .shop_news button {
+  width: 29px;
+  height: 29px;
+  background-color: var(--white-color);
+  color: var(--grey-color);
+  border: 1px solid var(--grey-light-color);
 }
